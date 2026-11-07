@@ -1,0 +1,9 @@
+{
+  "Name": "Push In Chairs - Android Experimental",
+  "Author": "Community Android adaptation",
+  "Version": "0.1.0",
+  "Description": "Experimental chair-only movement near tables; not yet push-under-table.",
+  "UniqueID": "Community.PushInChairsAndroid",
+  "EntryDll": "PushInChairs.dll",
+  "MinimumApiVersion": "4.0.0"
+}

@@ -48,7 +48,7 @@ public sealed class ModEntry : Mod
                     break;
                 }
             }
-            if (!tableFound || !location.isTileLocationTotallyClearAndPlaceable(destination))
+            if (!tableFound || !location.isTileOnMap(destination) || location.furniture.Any(f => f != chair && f.getBoundingBox(f.TileLocation).Contains((int)(destination.X * 64 + 32), (int)(destination.Y * 64 + 32))))
                 continue;
             chair.TileLocation = destination;
             Helper.Input.Suppress(e.Button);

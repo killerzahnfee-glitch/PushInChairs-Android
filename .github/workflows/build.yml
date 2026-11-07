@@ -11,6 +11,8 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '6.0.x'
+      - name: Add Stardew Valley reference assemblies
+        uses: Pathoschild/SMAPI-ModBuildWorkflow/add-reference-assemblies@v1
       - name: Compile
         run: dotnet build PushInChairs/PushInChairs.csproj -c Release
       - name: Package
